@@ -14,5 +14,5 @@ module.exports = {
 	clientSecret: 'dummy',
 
 	// callbackURL is the URL that will be called to return to your application on successful authentication
-	callbackURL: 'http://localhost:30000/info'
+	callbackURL: 'http://localhost:30000/callback'
 };

@@ -40,11 +40,11 @@ passport.deserializeUser(function (user, done) {
 });
 
 app.get('/', function (request, response) {
-	var html ="
+	var html ="\
 	<ul>\
 	    <li><a href='/auth'>Authenticate</a></li>\
 	    <li><a href='/logout'>Log Out</a></li>\
-	</ul>
+	</ul>\
 	";
 
 	response.send(html);
@@ -58,18 +58,21 @@ app.get('/logout', function (request, response) {
 
 app.get('/auth', passport.authenticate('OpenShift', {
 	scope: config.scope,
-	state: 'this-is-totally-random',
+	state: 'this-is-totally-random'
+}));
+
+app.get('/callback', passport.authenticate('OpenShift', {
 	successRedirect: '/info',
 	failureRedirect: '/'
 }));
 
 app.get('/info', function (request, response) {
-	var hmtl ="
+	var hmtl ="\
 	<ul>\
-    	    <li>Access Token: " + request.user.accessToken + "</li>\
+	    <li>Access Token: " + request.user.accessToken + "</li>\
 	    <li>Refresh Token: " + request.user.refreshToken + "</li>\
 	    <li>Profile: " + request.user.profile + "</li>\
-	</ul>
+	</ul>\
 	";
 
 	response.send(html);
