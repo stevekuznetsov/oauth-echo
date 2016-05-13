@@ -1,26 +1,26 @@
 {
-  "name": "oauth-echo",
-  "version": "1.0.0",
-  "description": "Simple Express app to act as an OAuth client",
-  "main": "index.js",
-  "dependencies": {
-    "express": "^4.13.4",
-    "express-session": "^1.13.0",
-    "passport": "^0.3.2",
-    "passport-oauth": "^1.0.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "npm test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stevekuznetsov/oauth-echo.git"
-  },
-  "author": "Steve Kuznetsov",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/stevekuznetsov/oauth-echo/issues"
-  },
-  "homepage": "https://github.com/stevekuznetsov/oauth-echo#readme"
+	"name": "oauth-echo",
+	"version": "1.0.0",
+	"description": "Simple Express app to act as an OAuth client",
+	"main": "index.js",
+	"dependencies": {
+		"express": "^4.13.4",
+		"express-session": "^1.13.0",
+		"passport": "^0.3.2",
+		"passport-oauth": "^1.0.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "npm test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/stevekuznetsov/oauth-echo.git"
+	},
+	"author": "Steve Kuznetsov",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/stevekuznetsov/oauth-echo/issues"
+	},
+	"homepage": "https://github.com/stevekuznetsov/oauth-echo#readme"
 }
